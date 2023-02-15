@@ -1,0 +1,788 @@
+
+/* coommon CSS start */
+*{
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.contaner{
+    width: 1180px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* coommon CSS end */
+/* sidebar section start  */
+#lodeing_container{
+    height: 100%;
+    width: 100%;
+    background: #606c6f;
+    position: fixed;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lodeing_container span{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 3px solid rgb(255, 255, 255);
+    /* border-left-color: transparent; */
+    animation-name: lodeing;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+    margin-left: 10px; 
+    border-radius: 50%;
+    
+}
+#lodeing_container span:nth-child(1){
+    animation-delay: 1s;
+    border: 3px solid #fff;
+}
+ #lodeing_container span:nth-child(2) {
+    animation-delay: .1s;
+    border: 3px solid #2ca25f;
+}
+/* #lodeing_container span:nth-child(3) {
+    animation-delay: .8s;
+    border: 3px solid #fff;
+}
+#lodeing_container span:nth-child(4) {
+    animation-delay: .2s;
+    border: 3px solid #2ca25f;
+}
+#lodeing_container span:nth-child(5) {
+    animation-delay: .3s; 
+    border: 3px solid #fff;
+}
+#lodeing_container span:nth-child(6) {
+    animation-delay: .6s;
+    border: 3px solid #2ca25f;
+    
+}
+
+#lodeing_container span:nth-child(7) {
+    animation-delay: 1s;
+    
+    border: 3px solid #fff;
+}
+#lodeing_container span:nth-child(8) {
+    animation-delay: .9s;
+    border: 3px solid #fff;
+}
+#lodeing_container span:nth-child(9) {
+    animation-delay: .5s;
+    border: 3px solid #2ca25f;
+
+}
+#lodeing_container span:nth-child(10) {
+    animation-delay: .3s;
+    border: 3px solid #fff;
+} */ 
+
+
+
+@keyframes lodeing{
+    from{
+        transform: skewY(-45deg) rotate(0deg) ; 
+    }
+    to{
+        transform: skewY(45deg) rotate(3800deg) ;
+    }
+}
+.side_bar{
+    background: #797c7c;
+    backdrop-filter: blur(15px);
+    width: 350px;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    z-index: 999;
+}
+.side_bar.active{
+    left: 0;
+    
+}
+.side_bar .menu{
+    margin-top: 80px;
+    width: 100%;
+}
+.side_bar .menu .section_item a,
+#search_btn{
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+#search_btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.side_bar .menu .section_item a:hover{
+    background: #191f21;
+    transition: .5s;
+    
+}
+.side_bar .menu .section_item i{
+    margin-right: 15px;
+}
+.close_btn{
+    color: #fff;
+    right: 0;
+    top: 0;
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 25px;
+}
+#search {
+    padding: 10px;
+    width: 80%;
+    font-size: 10px;
+    top: -65%;
+    right: 28px;
+    font-size: 20px;
+    margin-left: 25px;
+}
+/* sidebar section end  */
+/* navigation css start */
+nav{
+    background: #252d2f;
+} 
+nav .menu{
+    width: 80%;
+    
+}
+nav .logo{
+    width: 15%;
+}
+ul{
+    justify-content: flex-end;
+}
+nav a{
+    color: #ffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    padding: 26px 21px;
+    transition: .6s;
+    
+    
+}
+.menu_btn {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 22px 25px;
+}
+nav a:hover{
+    color: #2ca25f;
+    
+    
+}
+nav .row{
+    align-items: center;
+}
+
+/* navigation css end */
+/* bannar section CSS start */
+#bannar{
+    background-image: url(../img/Focal\ bannar.jpg);
+    height: 1112px;
+    align-items: center;
+    background-size: cover;
+    /* position: relative; */
+}
+
+#bannar h1{
+    color: #ffff;
+    font-size: 60px;
+ font-weight: 700;
+ border: 1px solid #ffff;
+ border-right: none;
+ border-left: none;
+ text-align: center;
+ width:fit-content ;
+ margin: auto;
+ text-transform: uppercase;
+
+ 
+
+}
+#bannar a{
+    color: #ffff;
+    border: 2px solid #fff;
+    padding: 20px 36px;
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/* bannar section CSS start */
+
+ /* sub info start  */
+
+.sub_info{
+    width: 33%;
+    padding-left: 21px ;
+    
+   
+}
+ .sub_info h4{
+    color: #797c7c;
+    padding-top: 98px;
+    padding-bottom: 22px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+   
+}
+ .sub_info p{
+    width: 357px;
+    color: #d8d8d8;
+    padding-bottom: 99px;
+}
+/* sub info end  */
+/* about section CSS start  */
+#about{
+    background: #f2f2f1;
+}
+#about .about_img{
+    width: 30%;
+    position: relative;   
+}
+
+#about .about_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+#about .about_img img:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .8s;
+}
+#about .about_img:hover img:nth-child(2){
+    visibility: visible;
+    opacity: 1;
+}
+#about .about_info{
+    width: 70%;
+}
+#about .section_item{
+    width: 50%;
+}
+#about .about_info{
+    padding: 100px 200px 100px 100px;
+}
+#about .about_info h2{
+    font-size: 30px;
+    color:#646667;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 48px;
+}
+#about .about_info p{
+    font-size: 18px;
+    color: #868c8d;
+    padding-bottom: 74px;
+}
+#about .section_item{
+    padding-top: 72px;
+}
+#about .section_item .about_icon_info{
+    width: 85%;
+}
+#about .section_item .about_icon{
+    width: 15%;
+}
+#about .section_item .about_icon_info h4{
+    color: #606c6f;
+    font-size: 22px;
+    font-weight: 700;
+}
+#about .section_item .about_icon_info p{
+    color: #797c7c;
+    padding-top: 28px;
+    width: 247px;
+}
+/* about section CSS end  */
+/* my_skill css start  */
+#my_skill .section_info{
+    padding: 20px;
+}
+#my_skill .section_info h2{
+    font-size: 30px;
+    font-weight: 700;
+    color:#646667;
+    padding-bottom: 50px ;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+#my_skill .section_info p{
+    font-size: 18px;
+    color: #d3d3d3;
+    width: 545px;
+    padding-bottom: 25px;
+}
+#my_skill .section_info a{
+    color: #2ecc71;
+    border: 1px solid  #2ecc71;
+    padding: 20px 42px; 
+    display: block;
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#my_skill .section_item .photoshop_contaner{
+    width: 555px;
+    background: #d8d8d6;
+}
+#my_skill .section_item .photoshop_contaner .skill_abrg{
+    width: 90%;
+    background: #2ecc71;
+}
+#my_skill .section_item .photoshop_contaner .skill_abrg p{
+    text-align: end;
+    padding: 10px;
+    color: #ffff;
+    font-weight: 700;
+}
+#my_skill .section_item .Illustrator {
+    width: 555px;
+    background: #d8d8d6;
+}
+
+#my_skill .section_item .Illustrator .skill_abrg {
+    width: 80%;
+    background: #2ecc71;
+}
+
+#my_skill .section_item .Illustrator .skill_abrg p {
+    text-align: end;
+    padding: 10px;
+    color: #ffff;
+    font-weight: 700;
+}
+#my_skill .section_item .same_name {
+    width: 555px;
+    background: #d8d8d6;
+}
+
+#my_skill .section_item .same_name .skill_abrg {
+    width: 90%;
+    background: #2ecc71;;
+}
+
+#my_skill .section_item .same_name .skill_abrg p {
+    text-align: end;
+    padding: 10px;
+    color: #ffff;
+    font-weight: 700;
+}
+#my_skill .section_item .same_name_2 {
+    width: 555px;
+    background: #d8d8d6;
+}
+
+#my_skill .section_item .same_name_2 .skill_abrg {
+    width: 70%;
+    background: #2ecc71;
+}
+
+#my_skill .section_item .same_name_2 .skill_abrg p {
+    text-align: end;
+    padding: 10px;
+    color: #ffff;
+    font-weight: 700;
+}
+#my_skill .section_item .photoshop_contaner h2,
+#my_skill .section_item .Illustrator h2,
+#my_skill .section_item .same_name h2,
+#my_skill .section_item .same_name_2 h2{
+    color: #868c8d;
+    font-size: 22px;
+}
+#my_skill .main_item h2{
+   color: #868c8d;
+   padding: 20px 0;
+   font-size: 22px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+#my_skill .main_item{
+    padding-left: 20px;
+    padding-bottom: 100px;
+}
+/* my_skill css start  */
+#resume{
+    background: #f2f2f1;
+    text-align: center;
+    height: 440px;
+    background-position: center;
+    position: relative;
+}
+#resume ::after{
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    margin-left: 50%;
+    background: #f2f2f1;
+    left: 0;
+    bottom: -30px;
+    rotate: 45deg;
+    
+}
+#resume h2{
+    padding-top: 100px ;
+    padding-bottom: 47px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #646667;
+}
+#resume p{
+    width: 1020px;
+    margin: auto;
+    color: #868c8d;
+    padding-bottom: 48px;
+    font-size: 18px;
+}
+#resume a{
+    padding: 21px 28px;
+    border: 1px solid #2ecc71;
+    text-transform: uppercase;
+    color: #2ecc71;
+    font-weight: 700;
+
+}
+/* my_skill css start  */
+/* my_education css section start  */
+/* #my_education  .contaner{
+    border-bottom: 1px solid #d3d3d3 ;
+} */
+#my_education .main_item{
+    padding-left: 37px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+#my_education .main_item h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #4d4f4f;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+#my_education .main_item h6{
+    font-size: 18px;
+    color: #a8a8a7;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    
+
+}
+#my_education .main_item p{
+    width: 545px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    color: #dedede;
+    border-top: 1px solid #d3d3d3;
+}
+#my_education .main_item .gpa p{
+    background: #2ecc71;
+    padding: 8px 12px;
+    /* display: block; */
+    width: fit-content;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+}
+#my_education .section_info p{
+    width: 545px;
+    color: #d3d3d3;
+    padding-top: 50px;
+    
+}
+#my_education .section_info h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #676767;
+    padding-top: 80px;
+    text-transform: uppercase;
+}
+#my_education .contaner {
+    border-bottom: 1px solid #d3d3d3;
+}
+/* my_education css section start  */
+/* work_experience css section start  */
+
+#work_experience .main_item {
+    padding-left: 37px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+#work_experience .main_item h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #4d4f4f;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#work_experience .main_item h6 {
+    font-size: 18px;
+    color: #a8a8a7;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+
+}
+
+#work_experience .main_item p {
+    width: 545px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    color: #dedede;
+    border-top: 1px solid #d3d3d3;
+}
+
+#work_experience .main_item .gpa p {
+    background: #2ecc71;
+    padding: 8px 12px;
+    /* display: block; */
+    width: fit-content;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+#work_experience .section_info p {
+    width: 545px;
+    color: #d3d3d3;
+    padding-top: 50px;
+
+}
+
+#work_experience .section_info h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #676767;
+    padding-top: 80px;
+    text-transform: uppercase;
+}
+/* work_experience css section start  */
+/* spc css start  */
+#spc{
+    background: #f2f2f1;
+    text-align: center;
+}
+#spc h4{
+    color: #787878;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 50px;
+    font-size: 18px;
+}
+#spc p{
+    color: #a8a8a7;
+    padding-top: 100px;
+    font-size: 24px;
+}
+#spc .section_item{
+    padding-bottom: 100px;
+}
+/* spc css start  */
+/* protfolio section CSS start */
+#protfolio .section_info{
+    text-align: center;
+}
+#protfolio .section_info h2{
+    color: #4d4f4f;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 46px 0;
+}
+#protfolio .section_info p{
+    font-size: 18px;
+    color: #a8a8a7;
+    padding-bottom: 96px;
+    width: 1020px;
+    margin: auto;
+}
+#protfolio .section_item  .protfolio_item{
+    width: 33%;
+    padding-bottom: 21px;
+    position: relative;
+    
+}
+#protfolio .section_item .protfolio_item img{
+    display: block;
+}
+#protfolio .section_item .protfolio_item .protfolio_overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(46,204,113,0.75);
+    padding-top: 126px;
+    padding-right: 162px;
+    padding-left: 155px;
+    padding-bottom: 125px;
+    transition: .6s;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.5);
+    transform-origin: top right;
+
+}
+#protfolio .section_item .protfolio_item:hover .protfolio_overly{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: bottom left;  
+}
+
+/* protfolio section CSS end */
+/* contact css start  */
+#contact{
+    background-color:#252e30 ;
+}
+#contact .section_info{
+    width: 50%;
+    padding-bottom: 442px;
+}
+#contact .section_item{
+    width: 50%;
+    padding-top: 151px;
+}
+#contact .section_info h2{
+    color: #ffff;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 45px;
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+#contact .section_info p{
+    color: #a8a8a7;
+    font-size: 18px;
+    width: 548px;
+    padding-bottom: 38px;
+
+}
+#contact .section_info .contact_info b{
+    color: #fff;
+    padding-right: 47px;
+    font-size: 18px;
+    font-weight: 400;
+}
+#contact .section_info .contact_info .other{
+    color: #a8a8a7;
+    
+}
+#contact .section_item  .section_ineer_lab p{
+    color: #fff;
+    font-size: 18px;
+
+
+}
+#contact .section_item .contact_form input,
+#contact .section_item .contact_form textarea{
+    background: #606c6f;
+    width: 552px;
+    display: block;
+    padding: 25px 10px;
+    resize: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    
+}
+#contact .section_item .contact_form textarea{
+    height: 280px;
+    width: 552px;
+    resize: none;
+}
+#contact .section_item .contact_form label{
+
+}
+#contact .section_item .contact_form label p{
+    color: #ffff;
+    font-size: 18px;
+    padding-top: 10px;
+}
+#contact .section_item .contact_form{
+    padding-bottom: 20px;
+}
+#contact .section_item a{
+    background: #191f21;
+    color: #fff;
+    padding: 20px 38px;
+    display: block;
+    width: fit-content;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+#contact .fotter{
+    background: #191f21;
+    text-align: center;
+}
+#contact .fotter i{
+    font-size: 30px ;
+    color: #4b5456;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-radius: 50%;
+    letter-spacing: 8px;
+    transition: .4s;
+}
+#contact .fotter i:hover{
+    color: #fff;
+    font-size: 40px;
+}
+#contact .fotter h6{
+    color: #4b5456;
+    font-size: 14px;
+    padding-top: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* contact css start  */
+
